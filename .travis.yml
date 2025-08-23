@@ -1,0 +1,14 @@
+# name: testing the react
+
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t mousa/react-test -f Dockerfile.dev .
+
+scripts:
+  - docker run -e CI=true mousa/react-test npm run test
