@@ -24,3 +24,15 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/Learn from Gamil/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Learn from Gamil/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/Learn from Gamil/i);
+  expect(linkElement).toBeInTheDocument();
+});
