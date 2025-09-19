@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sudo: required
 # language: generic 
 
@@ -26,3 +27,19 @@
 
 
   
+=======
+# name: testing the react
+
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t mousa/react-test -f Dockerfile.dev .
+
+scripts:
+  - docker run -e CI=true mousa/react-test npm run test
+>>>>>>> ed873b79482ca038270332369372f702ae564708
