@@ -1,0 +1,28 @@
+# sudo: required
+# language: generic 
+
+# services: 
+#  - docker 
+
+# before_install: 
+#   - docker build -t ahmedgamil/docker-react -f Dockerfile.dev .
+
+# scripts: 
+#   - docker run -e CI=true ahmedgamil/docker-react npm run test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "s-east-1"
+#   app: "react"
+#   env: "react-env"
+#   bucket_name: "elasticbeanstalk-us-east-1-632353115384"
+#   bucket_path: "react"
+  
+#   on:
+#     branch: master
+
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_key_id: $AWS_SECRET_KEY
+
+
+  
