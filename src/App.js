@@ -7,11 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-<<<<<<< HEAD
           we are now a DEVOPS Engineers    
-=======
-          Gamed ya Gamed   
->>>>>>> ed873b79482ca038270332369372f702ae564708
         </p>
         <a
           className="App-link"
